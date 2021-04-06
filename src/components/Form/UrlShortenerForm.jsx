@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function UrlShortenerForm({ setLink }) {
+function UrlShortenerForm({ shortLinkAndUrl, setShortLinkAndUrl }) {
   const [url, setUrl] = useState('');
 
   async function handleSubmit(ev) {
@@ -9,7 +9,10 @@ function UrlShortenerForm({ setLink }) {
       try {
         const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
         const data = await res.json();
-        setLink(data.result.short_link);
+        setShortLinkAndUrl([
+          ...shortLinkAndUrl,
+          { url, shortenedLink: data.result.short_link },
+        ]);
       } catch (err) {
         console.error(err);
       }
