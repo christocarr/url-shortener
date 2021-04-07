@@ -11,7 +11,7 @@ function UrlShortenerForm({ shortLinkAndUrl, setShortLinkAndUrl }) {
         const data = await res.json();
         setShortLinkAndUrl([
           ...shortLinkAndUrl,
-          { url, shortenedLink: data.result.short_link },
+          { url, shortenedLink: `https://${data.result.short_link}` },
         ]);
       } catch (err) {
         console.error(err);
