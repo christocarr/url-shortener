@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import UrlShortenerForm from './components/form/UrlShortenerForm';
+import UrlItem from './components/url-item/UrlItem';
 
 function App() {
   const [shortLinkAndUrl, setShortLinkAndUrl] = useState([]);
@@ -18,19 +19,12 @@ function App() {
       {shortLinkAndUrl.length > 0 && (
         <ul>
           {shortLinkAndUrl.map((linkAndUrl, index) => (
-            <li key={index}>
-              <div>{linkAndUrl.url}</div>
-              <div>
-                <p>{linkAndUrl.shortenedLink}</p>
-                {linkAndUrl.shortenedLink === copiedShortenedLink ? (
-                  <button style={{ backgroundColor: 'hsl(257, 27%, 26%)' }}>
-                    Copied!
-                  </button>
-                ) : (
-                  <button onClick={handleCopy}>Copy</button>
-                )}
-              </div>
-            </li>
+            <UrlItem
+              index={index}
+              linkAndUrl={linkAndUrl}
+              copiedShortenedLink={copiedShortenedLink}
+              handleCopy={handleCopy}
+            />
           ))}
         </ul>
       )}
