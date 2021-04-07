@@ -1,0 +1,32 @@
+.list_item {
+  border-radius: 0.5em;
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+.user_url_container,
+.shortened__url_link_container {
+  padding: 1em;
+}
+
+.user_url_container {
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+  overflow: hidden;
+}
+
+.user_url_container p {
+  word-wrap: break-word;
+  color: hsl(255, 11%, 22%);
+}
+
+.shortened__url_link_container {
+  color: hsl(180, 66%, 49%);
+}
+
+.short_link {
+  margin-bottom: 1em;
+}
+
+.copy_button {
+  width: 100%;
+}
