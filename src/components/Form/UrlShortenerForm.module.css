@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  /* background: url('/assets/images/bg-shorten-mobile.svg'); */
+  background-color: hsl(257, 27%, 26%);
+  padding: 2em;
+  border-radius: 0.5em;
+}
+
+.input {
+  padding: 1em 1em;
+  border-radius: 0.5em;
+}
+
+.error {
+  color: hsl(0, 87%, 67%);
+  margin: 0.5em 0;
+  font-style: italic;
+}
+
+.button {
+  margin-top: 1em;
+}

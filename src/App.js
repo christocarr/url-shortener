@@ -24,7 +24,7 @@ function App() {
                 <p>{linkAndUrl.shortenedLink}</p>
                 {linkAndUrl.shortenedLink === copiedShortenedLink ? (
                   <button style={{ backgroundColor: 'hsl(257, 27%, 26%)' }}>
-                    Copied
+                    Copied!
                   </button>
                 ) : (
                   <button onClick={handleCopy}>Copy</button>
