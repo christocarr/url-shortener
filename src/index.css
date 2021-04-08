@@ -27,7 +27,8 @@
   --error-placeholder-color: hsl(0, 87%, 67%);
   --main-background-color: hsl(260, 20%, 94%);
   --cyan: hsl(180, 66%, 49%);
-
+  --body-text-color: hsl(257, 7%, 63%);
+  --heading-text-color: hsl(255, 11%, 22%);
   --Dark-Violet: hsl(257, 27%, 26%);
   --Red: hsl(0, 87%, 67%);
   --Gray: hsl(0, 0%, 75%);
@@ -38,22 +39,25 @@
 }
 
 body {
+  color: var(--body-text-color);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--main-background-color);
-  padding: 1em;
+  line-height: 1.6em;
 }
 
 /* default styles */
 button {
-  font-family: 'PoppinsMedium' sans-serif;
   border-style: none;
   color: white;
   background-color: var(--main-button-color);
   padding: 1em;
   border-radius: 0.5em;
   font-size: 1rem;
+  font-family: 'PoppinsBold', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 input {
@@ -69,6 +73,52 @@ li {
   list-style: none;
 }
 
+h1,
 p {
   margin: 0;
+}
+
+.hero_container {
+  width: 100vw;
+  height: 1000px;
+  background-color: white;
+  margin-bottom: 5em;
+}
+
+.svg_container {
+  width: 100%;
+  height: 50%;
+}
+
+.hero_text_container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero_heading {
+  font-family: 'PoppinsBold', sans-serif;
+  font-weight: 700;
+  font-size: 2.3rem;
+  letter-spacing: -1.5px;
+  line-height: 1.2em;
+  color: var(--heading-text-color);
+  margin-bottom: 0.4em;
+}
+
+.hero_body {
+  margin-bottom: 1.2em;
+}
+
+.hero_cta {
+  width: 200px;
+  border-radius: 2em;
+  font-family: 'PoppinsBold', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.form_link_list_container {
+  padding: 0 1em;
+  margin-top: -11em;
 }

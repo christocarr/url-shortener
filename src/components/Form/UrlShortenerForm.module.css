@@ -1,7 +1,6 @@
 .form {
   display: flex;
   flex-direction: column;
-  /* background: url('/assets/images/bg-shorten-mobile.svg'); */
   background-color: hsl(257, 27%, 26%);
   padding: 2em;
   margin-bottom: 1em;
@@ -21,4 +20,6 @@
 
 .button {
   margin-top: 1em;
+  font-family: 'PoppinsBold', sans-serif;
+  font-weight: 700;
 }
