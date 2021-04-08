@@ -47,7 +47,6 @@ body {
   line-height: 1.6em;
 }
 
-/* default styles */
 button {
   border-style: none;
   color: white;
@@ -75,7 +74,8 @@ li {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-family: 'PoppinsBold', sans-serif;
   font-weight: 700;
   letter-spacing: -1.5px;
@@ -94,6 +94,15 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 section {
@@ -193,4 +202,39 @@ section {
 
 .boost_section h2 {
   margin-bottom: 1em;
+}
+
+footer {
+  background-color: var(--Very-Dark-Violet);
+  text-align: center;
+  padding: 4em 0;
+}
+
+footer h4 {
+  color: white;
+}
+
+.footer_logo {
+  margin-bottom: 2em;
+}
+
+.footer__links-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.footer__links-container h4 {
+  margin-bottom: 1em;
+}
+
+.footer__links-container a {
+  margin-bottom: 0.5em;
+}
+
+.social_icons_container {
+  width: 55%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
 }
