@@ -128,7 +128,7 @@ section {
   margin-bottom: 1.2em;
 }
 
-.hero_cta {
+.button_cta {
   width: 200px;
   border-radius: 2em;
   font-family: 'PoppinsBold', sans-serif;
@@ -152,6 +152,7 @@ section {
   padding: 4em 1.5em 1.5em 1.5em;
   border-radius: 0.5em;
   margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .statistics_container p {
@@ -177,4 +178,19 @@ section {
   width: 10px;
   background-color: var(--cyan);
   transform: translateX(50%);
+}
+
+.boost_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(257, 27%, 26%);
+  height: 360px;
+  width: 100%;
+  margin: 0;
+}
+
+.boost_section h2 {
+  margin-bottom: 1em;
 }

@@ -28,7 +28,7 @@ function App() {
             Build your brand's recognition and get insights on how your links
             are performing.
           </p>
-          <button className="hero_cta">Get Started</button>
+          <button className="button_cta">Get Started</button>
         </div>
       </section>
       <div className="form_link_list_container">
@@ -105,6 +105,18 @@ function App() {
             customizable links, supercharging audience engagement.{' '}
           </p>
         </div>
+      </section>
+      <section
+        className="boost_section"
+        style={{
+          backgroundImage: `url('./assets/images/bg-boost-mobile.svg')`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'center',
+          backgroundSize: '100% 100%',
+        }}
+      >
+        <h2 style={{ color: 'white' }}>Boost your Links today</h2>
+        <button className="button_cta">Get Started</button>
       </section>
     </>
   );
