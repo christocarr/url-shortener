@@ -74,8 +74,32 @@ li {
 }
 
 h1,
-p {
+h2,
+h3 {
+  font-family: 'PoppinsBold', sans-serif;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 1.2em;
+  color: var(--heading-text-color);
   margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+section {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .hero_container {
@@ -97,12 +121,6 @@ p {
 }
 
 .hero_heading {
-  font-family: 'PoppinsBold', sans-serif;
-  font-weight: 700;
-  font-size: 2.3rem;
-  letter-spacing: -1.5px;
-  line-height: 1.2em;
-  color: var(--heading-text-color);
   margin-bottom: 0.4em;
 }
 
@@ -121,4 +139,42 @@ p {
 .form_link_list_container {
   padding: 0 1em;
   margin-top: -11em;
+  margin-bottom: 6em;
+}
+
+.statistics_section {
+  position: relative;
+}
+
+.statistics_container {
+  position: relative;
+  background-color: white;
+  padding: 4em 1.5em 1.5em 1.5em;
+  border-radius: 0.5em;
+  margin-top: 5em;
+}
+
+.statistics_container p {
+  margin-bottom: 0;
+}
+
+.icon_container {
+  position: absolute;
+  right: 50%;
+  transform: translate(50%, -125%);
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  background-color: var(--Dark-Violet);
+}
+
+.connection_line {
+  position: absolute;
+  z-index: -1001;
+  top: 20rem;
+  right: 50%;
+  height: 40em;
+  width: 10px;
+  background-color: var(--cyan);
+  transform: translateX(50%);
 }
