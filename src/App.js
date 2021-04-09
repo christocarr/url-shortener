@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from './components/header/Header';
 import UrlShortenerForm from './components/form/UrlShortenerForm';
 import UrlItem from './components/url-item/UrlItem';
 
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <>
+      <Header />
       <section className="hero_container">
         <div
           className="svg_container"
