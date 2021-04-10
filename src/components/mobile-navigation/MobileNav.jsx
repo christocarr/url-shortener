@@ -1,9 +1,9 @@
-import styles from './Navigation.module.css';
+import styles from './MobileNav.module.css';
 
-function Navigation() {
+function MobileNav() {
   return (
-    <nav className={styles.navigation}>
-      <ul>
+    <nav>
+      <ul role="menu">
         <li>
           <a href="#">Features</a>
         </li>
@@ -24,4 +24,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default MobileNav;
