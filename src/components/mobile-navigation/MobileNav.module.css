@@ -1,0 +1,36 @@
+.mobile_nav {
+  position: absolute;
+  top: 4em;
+  right: 0;
+  left: 0;
+  width: 85vw;
+  background-color: hsl(257, 27%, 26%);
+  margin: 0 auto;
+  border-radius: 0.7em;
+  padding: 1em 1em;
+}
+
+.mobile__nav_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+}
+
+.mobile__nav_list li {
+  /* width: 100%; */
+  text-align: center;
+  color: white;
+  padding: 1em 0.5em;
+}
+
+@media (min-width: 1440px) {
+  .mobile_nav {
+    display: none;
+  }
+
+  .menu_button {
+    display: none;
+  }
+}

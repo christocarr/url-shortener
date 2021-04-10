@@ -8,7 +8,6 @@ test('renders navigation element', () => {
   const navigation = screen.getByRole('navigation');
   const menu = screen.getByRole('menu');
 
-  expect(navigation).toBeInTheDocument();
   expect(menu).toBeInTheDocument();
   expect(navigation).toContainHTML('ul');
 });
