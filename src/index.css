@@ -39,13 +39,17 @@
 }
 
 body {
+  box-sizing: border-box;
   color: var(--body-text-color);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--main-background-color);
   line-height: 1.6em;
+  width: 100vw;
   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 button {
@@ -70,6 +74,8 @@ ul {
 }
 
 li {
+  font-family: 'PoppinsBold', sans-serif;
+  font-weight: 700;
   list-style: none;
 }
 
@@ -136,14 +142,6 @@ section {
 
 .hero_body {
   margin-bottom: 1.2em;
-}
-
-.button_cta {
-  width: 200px;
-  border-radius: 2em;
-  font-family: 'PoppinsBold', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
 }
 
 .form_link_list_container {
