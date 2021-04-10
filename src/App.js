@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from './components/header/Header';
 import UrlShortenerForm from './components/form/UrlShortenerForm';
 import UrlItem from './components/url-item/UrlItem';
+import SignupButton from './components/signup-button/SignupButton';
 
 function App() {
   const [shortLinkAndUrl, setShortLinkAndUrl] = useState([]);
@@ -30,7 +31,7 @@ function App() {
             Build your brand's recognition and get insights on how your links
             are performing.
           </p>
-          <button className="button_cta">Get Started</button>
+          <SignupButton>Get Started</SignupButton>
         </div>
       </section>
       <div className="form_link_list_container">
@@ -118,7 +119,7 @@ function App() {
         }}
       >
         <h2 style={{ color: 'white' }}>Boost your Links today</h2>
-        <button className="button_cta">Get Started</button>
+        <SignupButton>Get Started</SignupButton>
       </section>
       <footer>
         <div className="footer_logo">
