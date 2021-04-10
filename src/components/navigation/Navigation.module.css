@@ -1,0 +1,14 @@
+.navigation {
+  display: none;
+  width: 80%;
+}
+
+.navigation ul {
+  display: flex;
+}
+
+@media (min-width: 1440px) {
+  .navigation {
+    display: inline-block;
+  }
+}
