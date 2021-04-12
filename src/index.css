@@ -44,7 +44,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--main-background-color);
   line-height: 1.6em;
   width: 100vw;
   overflow-x: hidden;
@@ -119,23 +118,27 @@ section {
 }
 
 .form_link_list_container {
-  margin-top: -11em;
-  margin-bottom: 6em;
-  margin: -11em auto 6em auto;
+  margin: -16.5em auto 5em auto;
   width: 90%;
 }
 
 .statistics_section {
   position: relative;
+  background-color: var(--main-background-color);
+  width: 100%;
+  padding-top: 10em;
+  padding-bottom: 2em;
 }
 
 .statistics_container {
+  word-wrap: break-word;
   position: relative;
   background-color: white;
-  padding: 4em 1.5em 1.5em 1.5em;
+  width: 85%;
+  height: 200px;
+  padding: 4em 1em 1.5em 1em;
   border-radius: 0.5em;
-  margin-top: 5em;
-  margin-bottom: 5em;
+  margin: 5em auto;
 }
 
 .statistics_container p {
@@ -154,8 +157,8 @@ section {
 
 .connection_line {
   position: absolute;
-  z-index: -1001;
-  top: 20rem;
+  z-index: 0;
+  top: 30rem;
   right: 50%;
   height: 40em;
   width: 10px;

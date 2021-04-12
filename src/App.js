@@ -17,25 +17,27 @@ function App() {
     <>
       <Header />
       <Hero />
-      <div className="form_link_list_container">
-        <UrlShortenerForm
-          shortLinkAndUrl={shortLinkAndUrl}
-          setShortLinkAndUrl={setShortLinkAndUrl}
-        />
-        {shortLinkAndUrl.length > 0 && (
-          <ul>
-            {shortLinkAndUrl.map((linkAndUrl, index) => (
-              <UrlItem
-                index={index}
-                linkAndUrl={linkAndUrl}
-                copiedShortenedLink={copiedShortenedLink}
-                handleCopy={handleCopy}
-              />
-            ))}
-          </ul>
-        )}
-      </div>
+
       <section className="statistics_section">
+        <div className="form_link_list_container">
+          <UrlShortenerForm
+            shortLinkAndUrl={shortLinkAndUrl}
+            setShortLinkAndUrl={setShortLinkAndUrl}
+          />
+          {shortLinkAndUrl.length > 0 && (
+            <ul>
+              {shortLinkAndUrl.map((linkAndUrl, index) => (
+                <UrlItem
+                  index={index}
+                  linkAndUrl={linkAndUrl}
+                  copiedShortenedLink={copiedShortenedLink}
+                  handleCopy={handleCopy}
+                />
+              ))}
+            </ul>
+          )}
+        </div>
+        <div className="connection_line"></div>
         <h2>Advanced Statistics</h2>
         <p>
           Track how your links are performing across the web with our advanced
@@ -74,7 +76,7 @@ function App() {
             where people engage with your content helps inform better decisions.
           </p>
         </div>
-        <div className="connection_line"></div>
+
         <div className="statistics_container">
           <div
             className="icon_container"

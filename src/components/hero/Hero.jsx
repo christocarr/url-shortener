@@ -9,8 +9,8 @@ function Hero() {
         style={{
           backgroundImage: `url('./assets/images/illustration-working.svg')`,
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'calc(100% + 110px)',
-          backgroundSize: '100%',
+          backgroundPosition: 'calc(100% + 150px)',
+          backgroundSize: 'cover',
         }}
       ></div>
       <div className={styles.hero_text_container}>
