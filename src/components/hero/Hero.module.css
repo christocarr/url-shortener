@@ -28,9 +28,6 @@
 }
 
 @media screen and (min-width: 500px) {
-  .hero_container {
-    height: 850px;
-  }
   .svg_container {
     height: 350px;
   }
@@ -44,7 +41,7 @@
 
 @media screen and (min-width: 1024px) {
   .hero_container {
-    height: 1000px;
+    height: 900px;
   }
   .svg_container {
     height: 550px;
