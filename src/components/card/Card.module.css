@@ -21,3 +21,10 @@
   border-radius: 50%;
   background-color: var(--Dark-Violet);
 }
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 70%;
+    padding: 4em 2em 3em 2em;
+  }
+}

@@ -205,3 +205,12 @@ footer h4 {
   display: flex;
   justify-content: space-evenly;
 }
+
+@media screen and (min-width: 1024px) {
+  .form_link_list_container {
+    width: 70%;
+  }
+  .statistics_heading_container {
+    width: 70%;
+  }
+}
