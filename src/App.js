@@ -3,6 +3,7 @@ import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import UrlShortenerForm from './components/form/UrlShortenerForm';
 import UrlItem from './components/url-item/UrlItem';
+import Card from './components/card/Card';
 import SignupButton from './components/signup-button/SignupButton';
 
 function App() {
@@ -37,61 +38,37 @@ function App() {
             </ul>
           )}
         </div>
-        <div className="connection_line"></div>
         <h2>Advanced Statistics</h2>
         <p>
           Track how your links are performing across the web with our advanced
           statistics dashboard.
         </p>
-        <div className="statistics_container">
-          <div
-            className="icon_container"
-            style={{
-              backgroundImage: `url('./assets/images/icon-brand-recognition.svg')`,
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center',
-              backgroundSize: '50%',
-            }}
-          ></div>
-          <h3>Brand Recognition</h3>
-          <p>
-            Boost your brand recognition with each click. Generic links don't
-            mean a thing. Branded links help instil confidence in your content.
-          </p>
-        </div>
+        <div className="card_container">
+          <Card iconPath="./assets/images/icon-brand-recognition.svg">
+            <h3>Brand Recognition</h3>
+            <p>
+              Boost your brand recognition with each click. Generic links don't
+              mean a thing. Branded links help instil confidence in your
+              content.
+            </p>
+          </Card>
 
-        <div className="statistics_container">
-          <div
-            className="icon_container"
-            style={{
-              backgroundImage: `url('./assets/images/icon-detailed-records.svg')`,
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center',
-              backgroundSize: '50%',
-            }}
-          ></div>
-          <h3>Detaild Records</h3>
-          <p>
-            Gain insights into who is clicking your links. Knowing when and
-            where people engage with your content helps inform better decisions.
-          </p>
-        </div>
-
-        <div className="statistics_container">
-          <div
-            className="icon_container"
-            style={{
-              backgroundImage: `url('./assets/images/icon-fully-customizable.svg')`,
-              backgroundRepeat: 'no-repeat',
-              backgroundPosition: 'center',
-              backgroundSize: '50%',
-            }}
-          ></div>
-          <h3>Fully Customizable</h3>
-          <p>
-            Improve brand awareness and content discoverability through
-            customizable links, supercharging audience engagement.{' '}
-          </p>
+          <Card iconPath="./assets/images/icon-detailed-records.svg">
+            <h3>Detaild Records</h3>
+            <p>
+              Gain insights into who is clicking your links. Knowing when and
+              where people engage with your content helps inform better
+              decisions.
+            </p>
+          </Card>
+          <div className="connection_line"></div>
+          <Card iconPath="./assets/images/icon-fully-customizable.svg">
+            <h3>Fully Customizable</h3>
+            <p>
+              Improve brand awareness and content discoverability through
+              customizable links, supercharging audience engagement.{' '}
+            </p>
+          </Card>
         </div>
       </section>
       <section

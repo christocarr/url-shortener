@@ -22,6 +22,12 @@
   font-family: 'PoppinsMedium', sans-serif;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --main-button-color: hsl(180, 66%, 49%);
   --error-placeholder-color: hsl(0, 87%, 67%);
@@ -130,37 +136,16 @@ section {
   padding-bottom: 2em;
 }
 
-.statistics_container {
-  word-wrap: break-word;
+.card_container {
   position: relative;
-  background-color: white;
-  width: 85%;
-  height: 200px;
-  padding: 4em 1em 1.5em 1em;
-  border-radius: 0.5em;
-  margin: 5em auto;
-}
-
-.statistics_container p {
-  margin-bottom: 0;
-}
-
-.icon_container {
-  position: absolute;
-  right: 50%;
-  transform: translate(50%, -125%);
-  width: 5em;
-  height: 5em;
-  border-radius: 50%;
-  background-color: var(--Dark-Violet);
 }
 
 .connection_line {
   position: absolute;
-  z-index: 0;
-  top: 30rem;
+  /* z-index: -1001; */
+  top: 15rem;
   right: 50%;
-  height: 40em;
+  height: 25em;
   width: 10px;
   background-color: var(--cyan);
   transform: translateX(50%);
