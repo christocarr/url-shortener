@@ -16,6 +16,7 @@
   color: hsl(0, 87%, 67%);
   margin: 0.5em 0;
   font-style: italic;
+  text-align: left;
 }
 
 .button {
