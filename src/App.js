@@ -38,11 +38,14 @@ function App() {
             </ul>
           )}
         </div>
-        <h2>Advanced Statistics</h2>
-        <p>
-          Track how your links are performing across the web with our advanced
-          statistics dashboard.
-        </p>
+        <div className="statistics_heading_container">
+          <h2>Advanced Statistics</h2>
+          <p>
+            Track how your links are performing across the web with our advanced
+            statistics dashboard.
+          </p>
+        </div>
+
         <div className="card_container">
           <Card iconPath="./assets/images/icon-brand-recognition.svg">
             <h3>Brand Recognition</h3>
