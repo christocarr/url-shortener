@@ -1,9 +1,9 @@
 .mobile_nav {
   position: absolute;
-  top: 4em;
+  top: 5em;
   right: 0;
   left: 0;
-  width: 85vw;
+  width: 90%;
   background-color: hsl(257, 27%, 26%);
   margin: 0 auto;
   border-radius: 0.7em;
