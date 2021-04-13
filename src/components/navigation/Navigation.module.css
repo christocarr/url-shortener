@@ -1,10 +1,34 @@
 .navigation {
   display: none;
-  width: 80%;
+  width: 90%;
 }
 
 .navigation ul {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation ul li {
+  margin-right: 1.5em;
+}
+
+.navigation ul li:last-of-type {
+  margin-right: 0;
+}
+
+.navigation ul li:first-of-type {
+  margin-left: 1.5em;
+}
+
+.nav__items_container {
+  display: flex;
+}
+
+.account__items_container {
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 1440px) {

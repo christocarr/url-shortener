@@ -16,8 +16,8 @@ function Hero() {
       <div className={styles.hero_text_container}>
         <h1 className={styles.hero_heading}>More than just shorter links</h1>
         <p className={styles.hero_body}>
-          Build your brand's recognition and get insights on how your links are
-          performing.
+          Build your brand's recognition and get detailed insights on how your
+          links are performing.
         </p>
         <SignupButton>Get Started</SignupButton>
       </div>

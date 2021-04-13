@@ -90,7 +90,7 @@ h3,
 h4 {
   font-family: 'PoppinsBold', sans-serif;
   font-weight: 700;
-  letter-spacing: -1.5px;
+  letter-spacing: 1px;
   line-height: 1.2em;
   color: var(--heading-text-color);
   margin: 0;
@@ -115,6 +115,9 @@ h4 {
 a {
   text-decoration: none;
   color: inherit;
+}
+p {
+  line-height: 1.6em;
 }
 
 section {
@@ -147,10 +150,9 @@ section {
 
 .connection_line {
   position: absolute;
-  /* z-index: -1001; */
-  top: 15rem;
+  top: 0;
   right: 50%;
-  height: 25em;
+  height: 100%;
   width: 10px;
   background-color: var(--cyan);
   transform: translateX(50%);
@@ -212,5 +214,66 @@ footer h4 {
   }
   .statistics_heading_container {
     width: 70%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .form_link_list_container {
+    width: 80%;
+  }
+
+  .statistics_section {
+    padding-bottom: 8em;
+  }
+
+  .statistics_heading_container {
+    width: 37%;
+    margin-top: 8em;
+  }
+
+  .card_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 0 auto;
+    width: 80%;
+  }
+  .connection_line {
+    top: 13em;
+    height: 10px;
+    width: 100%;
+  }
+
+  .boost_section {
+    height: 300px;
+  }
+
+  .boost_section h2 {
+    font-size: 2rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer_logo {
+    margin-right: 10em;
+    width: 25%;
+  }
+
+  .footer__links-container {
+    text-align: left;
+    font-size: 0.9rem;
+    width: 13%;
+  }
+
+  .footer__links-container h4 {
+    font-size: 0.9rem;
+    margin-bottom: 1.5em;
+  }
+
+  .social_icons_container {
+    width: 15%;
+    margin: 0 auto 0 1em;
   }
 }
