@@ -3,7 +3,6 @@ import styles from './UrlItem.module.css';
 
 function UrlItem({ index, linkAndUrl, copiedShortenedLink, handleCopy }) {
   const { url, shortenedLink } = linkAndUrl;
-  console.log(index);
   return (
     <li key={index} className={styles.list_item}>
       <div className={styles.user_url_container}>

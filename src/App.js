@@ -10,8 +10,14 @@ function App() {
   const [shortLinkAndUrl, setShortLinkAndUrl] = useState([]);
   const [copiedShortenedLink, setCopiedShortenedLink] = useState('');
 
-  const handleCopy = (event) => {
-    setCopiedShortenedLink(event.target.previousElementSibling.innerText);
+  //set shortened url to clipboard
+  const handleShortenedUrlCopy = (event) => {
+    navigator.clipboard.writeText(
+      event.target.previousElementSibling.innerText
+    );
+    navigator.clipboard
+      .readText()
+      .then((copiedText) => setCopiedShortenedLink(copiedText));
   };
 
   return (
@@ -32,7 +38,7 @@ function App() {
                   index={index}
                   linkAndUrl={linkAndUrl}
                   copiedShortenedLink={copiedShortenedLink}
-                  handleCopy={handleCopy}
+                  handleCopy={handleShortenedUrlCopy}
                 />
               ))}
             </ul>
