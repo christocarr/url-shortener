@@ -103,22 +103,22 @@ function App() {
         </div>
         <div className="footer__links-container">
           <h4>Features</h4>
-          <a href="">Link Shortenening</a>
-          <a href="#">Branded Links</a>
-          <a href="#">Analytics</a>
+          <a href="/">Link Shortenening</a>
+          <a href="/">Branded Links</a>
+          <a href="/">Analytics</a>
         </div>
         <div className="footer__links-container">
           <h4>Resources</h4>
-          <a href="#">Blog</a>
-          <a href="#">Developers</a>
-          <a href="#">Support</a>
+          <a href="/">Blog</a>
+          <a href="/">Developers</a>
+          <a href="/">Support</a>
         </div>
         <div className="footer__links-container">
           <h4>Company</h4>
-          <a href="#">About</a>
-          <a href="#">Our Team</a>
-          <a href="#">Careers</a>
-          <a href="#">Contact</a>
+          <a href="/">About</a>
+          <a href="/">Our Team</a>
+          <a href="/">Careers</a>
+          <a href="/">Contact</a>
         </div>
         <div className="social_icons_container">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
