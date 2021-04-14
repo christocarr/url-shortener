@@ -35,7 +35,7 @@ function App() {
             <ul>
               {shortLinkAndUrl.map((linkAndUrl, index) => (
                 <UrlItem
-                  index={index}
+                  key={index}
                   linkAndUrl={linkAndUrl}
                   copiedShortenedLink={copiedShortenedLink}
                   handleCopy={handleShortenedUrlCopy}
