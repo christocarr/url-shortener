@@ -1,0 +1,18 @@
+.loading_button_div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 5px solid rgba(231, 231, 231, 0.5);
+  border-top: 4px solid white;
+  animation: spin 1.3s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

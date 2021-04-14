@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import Spinner from '../spinner/Spinner';
 import styles from './UrlShortenerForm.module.css';
 
 function UrlShortenerForm({ shortLinkAndUrl, setShortLinkAndUrl }) {
   const [url, setUrl] = useState('');
   const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const errorStyle = {
     border: '3px solid  hsl(0, 87%, 67%)',
@@ -12,7 +14,9 @@ function UrlShortenerForm({ shortLinkAndUrl, setShortLinkAndUrl }) {
   async function handleSubmit(ev) {
     ev.preventDefault();
     if (url) {
+      //if user entered is valid and not empty
       try {
+        setLoading(true);
         const res = await fetch(`https://api.shrtco.de/v2/shorten?url=${url}`);
         const data = await res.json();
         setShortLinkAndUrl([
@@ -22,13 +26,14 @@ function UrlShortenerForm({ shortLinkAndUrl, setShortLinkAndUrl }) {
       } catch (err) {
         console.error(err);
         setError(true);
+      } finally {
+        setLoading(false);
       }
     }
 
     if (url === '') {
       setError(true);
     }
-
     setUrl('');
   }
 
@@ -39,6 +44,7 @@ function UrlShortenerForm({ shortLinkAndUrl, setShortLinkAndUrl }) {
 
   return (
     <form
+      aria-label="form"
       onSubmit={handleSubmit}
       className={styles.form}
       style={{
@@ -57,12 +63,13 @@ function UrlShortenerForm({ shortLinkAndUrl, setShortLinkAndUrl }) {
         style={error ? errorStyle : null}
       />
       {error && <p className={styles.error}>Please add a link</p>}
+
       <button
         data-testid="shorten-url-button"
         type="submit"
         className={styles.button}
       >
-        Shorten It!
+        {loading ? <Spinner /> : `Shorten It!`}
       </button>
     </form>
   );
