@@ -20,6 +20,7 @@ function Header() {
           height: '1.5em',
         }}
         onClick={toggleMobileNav}
+        aria-label="menu"
       ></button>
       <Navigation />
       {open && <MobileNav />}
