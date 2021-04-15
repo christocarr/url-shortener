@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useStickyState } from './stickyState.js';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import UrlShortenerForm from './components/form/UrlShortenerForm';
@@ -7,8 +8,13 @@ import Card from './components/card/Card';
 import SignupButton from './components/signup-button/SignupButton';
 
 function App() {
-  const [shortLinkAndUrl, setShortLinkAndUrl] = useState([]);
   const [copiedShortenedLink, setCopiedShortenedLink] = useState('');
+
+  //use custom hook to persist state when browser refreshes
+  const [shortLinkAndUrl, setShortLinkAndUrl] = useStickyState(
+    [],
+    'shortLinkAndUrk'
+  );
 
   //set shortened url to clipboard
   const handleShortenedUrlCopy = (event) => {
