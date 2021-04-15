@@ -1,70 +1,199 @@
-# Getting Started with Create React App
+# Frontend Mentor - Shortly URL shortening API Challenge solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
 
-### `yarn start`
+- [The challenge](#the-challenge)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Screenshot](#screenshot)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [Links](#links)
 
-### `yarn test`
+- [My process](#my-process)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Built with](#built-with)
 
-### `yarn build`
+- [What I learned](#what-i-learned)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Continued development](#continued-development)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Useful resources](#useful-resources)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Author](#author)
 
-### `yarn eject`
+## Overview
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### The challenge
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Users should be able to:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- View the optimal layout for the site depending on their device's screen size
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Shorten any valid URL
 
-## Learn More
+- See a list of their shortened links, even after refreshing the browser
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Copy the shortened link to their clipboard in a single click
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Receive an error message when the `form` is submitted if:
 
-### Code Splitting
+- The `input` field is empty
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Screenshot
 
-### Analyzing the Bundle Size
+![screenshot of finished challenge](./screenshot.jpg?raw=true)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Links
 
-### Making a Progressive Web App
+- Live Site URL: [Add live site URL here](https://cc-url-shortener.vercel.app)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## My process
 
-### Advanced Configuration
+### Built with
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Semantic HTML5 markup
 
-### Deployment
+- CSS custom properties
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Flexbox
 
-### `yarn build` fails to minify
+- Mobile-first workflow
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [React](https://reactjs.org/) - JS library
+
+- [CSS Modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) - for styles
+
+### What I learned
+
+I learned testing library, Jest, and the TDD technique to do DOM element testing on some components.
+
+```js
+test('submit form', async () => {
+  render(<UrlShortenerForm />);
+
+  const submitButton = screen.getByRole('button', { type: 'submit' });
+
+  await waitFor(() => fireEvent.click(submitButton));
+
+  expect(screen.getByPlaceholderText('Shorten a link here...').value).toBe('');
+});
+```
+
+### Continued development
+
+As I continue working on personal projects I plan to improve my React testing skills by using test driven development methods.
+
+### Useful resources
+
+- [ARIA](https://www.digitala11y.com/wai-aria-1-1-cheat-sheet/) - A cheatsheet that helped me get elements by ARIA role; the most preferred method of getting DOM elements.
+
+- [testing-library](https://testing-library.com/docs/dom-testing-library/cheatsheet) - A good resource to find what testing-library query to use when.
+
+## Author
+
+- Website - [Chris](https://www.iamchriscarr.com)
+
+- Frontend Mentor - [@christocarr](https://www.frontendmentor.io/profile/christocarr)
+
+# Frontend Mentor - Shortly URL shortening API Challenge solution
+
+This is a solution to the [Shortly URL shortening API Challenge challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+## Table of contents
+
+- [Overview](#overview)
+
+- [The challenge](#the-challenge)
+
+- [Screenshot](#screenshot)
+
+- [Links](#links)
+
+- [My process](#my-process)
+
+- [Built with](#built-with)
+
+- [What I learned](#what-i-learned)
+
+- [Continued development](#continued-development)
+
+- [Useful resources](#useful-resources)
+
+- [Author](#author)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+
+- Shorten any valid URL
+
+- See a list of their shortened links, even after refreshing the browser
+
+- Copy the shortened link to their clipboard in a single click
+
+- Receive an error message when the `form` is submitted if:
+
+- The `input` field is empty
+
+### Screenshot
+
+![screenshot of finished challenge](./screenshot.jpg?raw=true)
+
+### Links
+
+- Live Site URL: [url-shortener](https://cc-url-shortener.vercel.app)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+
+- CSS custom properties
+
+- Flexbox
+
+- Mobile-first workflow
+
+- [React](https://reactjs.org/) - JS library
+
+- [CSS Modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) - for styles
+
+### What I learned
+
+I learned testing library, Jest, and the TDD technique to do DOM element testing on some components.
+
+```js
+test('submit form', async () => {
+  render(<UrlShortenerForm />);
+
+  const submitButton = screen.getByRole('button', { type: 'submit' });
+
+  await waitFor(() => fireEvent.click(submitButton));
+
+  expect(screen.getByPlaceholderText('Shorten a link here...').value).toBe('');
+});
+```
+
+### Continued development
+
+As I continue working on personal projects I plan to improve my React testing skills by using test driven development methods.
+
+### Useful resources
+
+- [ARIA](https://www.digitala11y.com/wai-aria-1-1-cheat-sheet/) - A cheatsheet that helped me get elements by ARIA role; the most preferred method of getting DOM elements.
+
+- [testing-library](https://testing-library.com/docs/dom-testing-library/cheatsheet) - A good resource to find what testing-library query to use when.
+
+## Author
+
+- Website - [Chris](https://www.iamchriscarr.com)
+
+- Frontend Mentor - [@christocarr](https://www.frontendmentor.io/profile/christocarr)
