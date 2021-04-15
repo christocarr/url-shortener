@@ -61,6 +61,7 @@ function UrlShortenerForm({ shortLinkAndUrl, setShortLinkAndUrl }) {
         onChange={handleChange}
         className={styles.input}
         style={error ? errorStyle : null}
+        aria-label="enter a valid url"
       />
       {error && <p className={styles.error}>Please add a link</p>}
 
@@ -68,6 +69,7 @@ function UrlShortenerForm({ shortLinkAndUrl, setShortLinkAndUrl }) {
         data-testid="shorten-url-button"
         type="submit"
         className={styles.button}
+        aria-label="Submit url for shortening"
       >
         {loading ? <Spinner /> : `Shorten It!`}
       </button>
