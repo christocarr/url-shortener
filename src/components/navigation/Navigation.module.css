@@ -1,13 +1,5 @@
 .navigation {
-  display: none;
   width: 90%;
-}
-
-.navigation ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .navigation ul li {
@@ -24,15 +16,20 @@
 
 .nav__items_container {
   display: flex;
+  width: 50%;
 }
 
 .account__items_container {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  width: 30%;
 }
 
 @media (min-width: 1440px) {
   .navigation {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

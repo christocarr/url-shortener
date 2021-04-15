@@ -6,25 +6,25 @@ function MobileNav() {
     <>
       <nav className={styles.mobile_nav}>
         <ul role="menu" className={styles.mobile__nav_list}>
-          <div className={styles.nav__items_container}>
-            <li>
-              <a href="/">Features</a>
-            </li>
-            <li>
-              <a href="/">Pricing</a>
-            </li>
-            <li>
-              <a href="/">Resources</a>
-            </li>
-          </div>
-          <div className={styles.account__items_container}>
-            <li>
-              <a href="/">Login</a>
-            </li>
-            <li>
-              <SignupButton buttonWidth="100%">Sign Up</SignupButton>
-            </li>
-          </div>
+          <li>
+            <a href="/">Features</a>
+          </li>
+          <li>
+            <a href="/">Pricing</a>
+          </li>
+          <li>
+            <a href="/">Resources</a>
+          </li>
+        </ul>
+        <ul
+          className={`${styles.account__items_container} ${styles.mobile__nav_list}`}
+        >
+          <li>
+            <a href="/">Login</a>
+          </li>
+          <li>
+            <SignupButton buttonWidth="100%">Sign Up</SignupButton>
+          </li>
         </ul>
       </nav>
     </>
