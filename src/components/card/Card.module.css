@@ -1,6 +1,6 @@
 .card {
   position: relative;
-  z-index: 1;
+  z-index: 1001;
   background-color: white;
   width: 90%;
   padding: 5em 1em 1.5em 1em;
